@@ -4,8 +4,7 @@ pragma solidity ^0.8.21;
 import {CallContract} from "./CallContract.sol"; 
 
 contract TestCallContract {
-    
-    
+
     struct ReturnedData{
         uint256 x;
         bool y;
