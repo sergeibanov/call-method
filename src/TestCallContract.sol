@@ -26,6 +26,8 @@ contract TestCallContract {
         (success, "Failed TX");
     }
 
+
+    // it will trigger the fallback function 
     function callNotExistingFunction (address addr) external {
         (bool success, ) = addr.call(abi.encodeWithSignature("noSuchFunction()", 7));
         require(success, "No such function");
